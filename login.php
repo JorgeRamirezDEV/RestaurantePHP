@@ -1,5 +1,5 @@
 <?php
-require _ once 'bd. php' ;
+require_once 'bd. php' ;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -11,7 +11,7 @@ $usuario = $_POST['usuario'];
 session_start();
 // $usu tiene campos correo y codRes, correo
 $_SESSI0N['usuario'] = $usu;
-$ SESSION['carrito'] = [];
+$_SESSION['carrito'] = [];
 header("Location: categorias.php");
 return;
 }
