@@ -32,6 +32,12 @@ return;
     }?>
         <form action = "<?php echo htmlspecialchars($_SERVER["PHP_
         SELF"]); ?>" method = "POST">
-        <label for = "usuario">Usuario</label>
-    <input value = "<?php if(isset($usuario) )echo $usuario;?>"
-    id= "usuario" name = "usuario" type = "text">
+            <label for = "usuario">Usuario</label>
+            <input value = "<?php if(isset($usuario) )echo $usuario;?>"
+            id= "usuario" name = "usuario" type = "text">
+            <label for = "clave"> Clave </label>
+            <input id = "clave" name= "clave" type= "password"'>
+            <input type="submit">
+        </form>
+    </body>
+</html>
